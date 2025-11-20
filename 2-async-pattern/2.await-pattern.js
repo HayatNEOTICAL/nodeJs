@@ -10,7 +10,7 @@ const start = async() => {
         const second = await readFile('./content/second.txt', 'utf8')
         await writeFile
         ('./content/result-mind-grenade.txt',
-            `ISINYA : ${first} & ${second}`,
+             `${first} & ${second}`,
             { flag: 'a'}
         )
         console.log(first)
